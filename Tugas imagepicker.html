@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Picker</title>
+</head>
+<body>
+    
+    <label for="hewan">Hewan</label>
+    <select id="hewan">
+        <option value="Cendrawasih">Cendrawasih</option>
+        <option value="Cheetah">Cheetah</option>
+        <option value="Koala">Koala</option>
+        <option value="komodo">komodo</option>
+        <option value="Merak">Merak</option>
+
+    </select>
+    <button onclick="cetakGambar()">Cetak Gambar</button>
+    
+    <img id="gambar" src="">
+
+    <script>
+        
+        function cetakGambar() {
+            const hewan = document.getElementById('hewan');
+            const gambar = document.getElementById('gambar');
+
+            if (hewan.value === 'Cendrawasih') {
+                gambar.src = 'Cendrawasih.jpg'
+            }
+
+            if (hewan.value === 'Cheetah') {
+                gambar.src = 'Cheetah.jpg'
+            }
+            if (hewan.value === 'Koala') {
+                gambar.src = 'Koala.jpg'
+            }
+            if (hewan.value === 'komodo') {
+                gambar.src = 'komodo.jpg'
+            }
+            if (hewan.value === 'Merak') {
+                gambar.src = 'Merak.jpg'
+            }
+        }
+
+        
+    </script>
+</body>
+</html>
